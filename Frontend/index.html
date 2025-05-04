@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtesaMex - Artesanías Mexicanas</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #e76f51;
+            --secondary-color: #2a9d8f;
+            --accent-color: #e9c46a;
+            --dark-color: #264653;
+            --light-color: #f4f1de;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--dark-color);
+        }
+        
+        .navbar {
+            background-color: var(--dark-color);
+        }
+        
+        .navbar-brand {
+            font-weight: bold;
+            color: var(--light-color) !important;
+        }
+        
+        .nav-link {
+            color: var(--light-color) !important;
+            font-weight: 500;
+        }
+        
+        .nav-link.active {
+            color: var(--accent-color) !important;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(38, 70, 83, 0.7), rgba(38, 70, 83, 0.7)), url('/api/placeholder/1920/1080');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 0;
+            text-align: center;
+        }
+        
+        .hero-section h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .btn-primary:hover {
+            background-color: #d56344;
+            border-color: #d56344;
+        }
+        
+        .btn-outline-primary {
+            color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .btn-outline-primary:hover {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .feature-box {
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-box:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+        }
+        
+        .section-title {
+            position: relative;
+            margin-bottom: 40px;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            width: 60px;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+        
+        .section-title.text-center:after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .team-member {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .team-member img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--light-color);
+        }
+        
+        .product-card {
+            border: none;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            margin-bottom: 30px;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .footer {
+            background-color: var(--dark-color);
+            color: var(--light-color);
+            padding: 60px 0 30px;
+        }
+        
+        .footer h5 {
+            color: var(--accent-color);
+            margin-bottom: 20px;
+        }
+        
+        .footer-link {
+            color: var(--light-color);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-link:hover {
+            color: var(--accent-color);
+        }
+        
+        .social-icon {
+            font-size: 1.5rem;
+            margin-right: 15px;
+            color: var(--light-color);
+            transition: color 0.3s;
+        }
+        
+        .social-icon:hover {
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home-page">ArtesaMex</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home-page">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-page">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products-page">Productos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HOME PAGE -->
+    <div id="home-page">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <h1 class="mb-4">Artesanías Mexicanas Auténticas</h1>
+                        <p class="lead mb-5">Descubre la belleza y tradición del arte mexicano con nuestras piezas artesanales hechas a mano por artesanos locales.</p>
+                        <a href="#products-page" class="btn btn-primary btn-lg me-2">Ver Productos</a>
+                        <a href="#about-page" class="btn btn-outline-light btn-lg">Conócenos</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="section-title text-center mb-5">¿Por qué elegirnos?</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="feature-box text-center">
+                            <i class="fas fa-hands feature-icon"></i>
+                            <h3>Artesanía Auténtica</h3>
+                            <p>Todas nuestras piezas son elaboradas a mano por artesanos mexicanos expertos utilizando técnicas tradicionales.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-box text-center">
+                            <i class="fas fa-medal feature-icon"></i>
+                            <h3>Calidad Superior</h3>
+                            <p>Seleccionamos cuidadosamente cada pieza para garantizar que recibas productos de la más alta calidad.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-box text-center">
+                            <i class="fas fa-heart feature-icon"></i>
+                            <h3>Comercio Justo</h3>
+                            <p>Apoyamos a las comunidades artesanales pagando precios justos y fomentando su desarrollo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products Preview -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="section-title text-center mb-5">Productos Destacados</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card product-card">
+                            <img src="/api/placeholder/400/300" class="card-img-top" alt="Producto 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Alebrijes</h5>
+                                <p class="card-text">Figuras talladas en madera y pintadas a mano con colores vibrantes y diseños únicos.</p>
+                                <a href="#products-page" class="btn btn-outline-primary">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card product-card">
+                            <img src="/api/placeholder/400/300" class="card-img-top" alt="Producto 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Textiles</h5>
+                                <p class="card-text">Tejidos a mano con técnicas ancestrales y patrones tradicionales de diversas regiones.</p>
+                                <a href="#products-page" class="btn btn-outline-primary">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card product-card">
+                            <img src="/api/placeholder/400/300" class="card-img-top" alt="Producto 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Cerámica</h5>
+                                <p class="card-text">Piezas de barro modeladas y decoradas siguiendo tradiciones centenarias.</p>
+                                <a href="#products-page" class="btn btn-outline-primary">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <a href="#products-page" class="btn btn-primary">Ver todos los productos</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ABOUT PAGE -->
+    <div id="about-page" class="py-5">
+        <div class="container">
+            <h2 class="section-title mb-5">Acerca de Nosotros</h2>
+            
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6">
+                    <h3>Nuestra Historia</h3>
+                    <p>ArtesaMex nació en 2015 con la misión de preservar y promover el rico patrimonio artesanal mexicano. Lo que comenzó como un pequeño puesto en mercados locales se ha convertido en una empresa dedicada a conectar el talento artesanal mexicano con amantes del arte en todo el país.</p>
+                    <p>Cada pieza que ofrecemos cuenta una historia única, transmitiendo la cultura, tradiciones y el espíritu creativo de México a través de las manos expertas de nuestros artesanos.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="/api/placeholder/600/400" alt="Nuestra Historia" class="img-fluid rounded">
+                </div>
+            </div>
+            
+            <div class="row align-items-center mb-5 flex-lg-row-reverse">
+                <div class="col-lg-6">
+                    <h3>Nuestra Misión</h3>
+                    <p>En ArtesaMex, nos dedicamos a:</p>
+                    <ul>
+                        <li>Preservar y promover las técnicas artesanales tradicionales mexicanas</li>
+                        <li>Ofrecer productos auténticos y de alta calidad a precios justos</li>
+                        <li>Apoyar directamente a los artesanos y sus comunidades</li>
+                        <li>Contribuir al desarrollo sostenible de las comunidades artesanales</li>
+                        <li>Difundir la riqueza cultural de México a través de sus artesanías</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <img src="/api/placeholder/600/400" alt="Nuestra Misión" class="img-fluid rounded">
+                </div>
+            </div>
+            
+            <h3 class="text-center mb-4">Nuestro Equipo</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img src="/api/placeholder/300/300" alt="Equipo 1">
+                        <h4 class="mt-3">María Fernández</h4>
+                        <p class="text-muted">Fundadora y Directora</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img src="/api/placeholder/300/300" alt="Equipo 2">
+                        <h4 class="mt-3">Carlos Ramírez</h4>
+                        <p class="text-muted">Coordinador de Artesanos</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img src="/api/placeholder/300/300" alt="Equipo 3">
+                        <h4 class="mt-3">Laura Gómez</h4>
+                        <p class="text-muted">Diseñadora</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PRODUCTS PAGE -->
+    <div id="products-page" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title mb-5">Nuestros Productos</h2>
+            
+            <!-- Product Categories -->
+            <ul class="nav nav-pills mb-4 justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#all">Todos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#wood">Madera</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#textile">Textiles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#ceramic">Cerámica</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#jewelry">Joyería</a>
+                </li>
+            </ul>
+            
+            <!-- Products Grid -->
+            <div class="row">
+                <!-- Product 1 -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="card product-card">
+                        <img src="/api/placeholder/300/200" class="card-img-top" alt="Producto 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Alebrije Multicolor</h5>
+                            <p class="text-muted">Madera</p>
+                            <p class="card-text">Figura tallada y pintada a mano con diseños únicos y colores vibrantes.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 mb-0">$850</span>
+                                <button class="btn btn-sm btn-outline-primary">Ver detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="card product-card">
+                        <img src="/api/placeholder/300/200" class="card-img-top" alt="Producto 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Rebozo Tradicional</h5>
+                            <p class="text-muted">Textiles</p>
+                            <p class="card-text">Tejido a mano en telar con técnicas ancestrales y tintes naturales.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 mb-0">$1,200</span>
+                                <button class="btn btn-sm btn-outline-primary">Ver detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="card product-card">
+                        <img src="/api/placeholder/300/200" class="card-img-top" alt="Producto 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Talavera Decorativa</h5>
+                            <p class="text-muted">Cerámica</p>
+                            <p class="card-text">Pieza de cerámica pintada a mano con diseños tradicionales de Puebla.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 mb-0">$650</span>
+                                <button class="btn btn-sm btn-outline-primary">Ver detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="card product-card">
+                        <img src="/api/placeholder/300/200" class="card-img-top" alt="Producto 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Collar de Plata</h5>
+                            <p class="text-muted">Joyería</p>
+                            <p class="card-text">Joyería fina de plata trabajada a mano por artesanos de Taxco.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 mb-0">$1,500</span>
+                                <button class="btn btn-sm btn-outline-primary">Ver detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 5 -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="card product-card">
+                        <img src="/api/placeholder/300/200" class="card-img-top" alt="Producto 5">
+                        <div class="card-body">
+                            <h5 class="card-title">Máscara Ceremonial</h5>
+                            <p class="text-muted">Madera</p>
+                            <p class="card-text">Máscara tallada en madera inspirada en tradiciones prehispánicas.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 mb-0">$950</span>
+                                <button class="btn btn-sm btn-outline-primary">Ver detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 6 -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="card product-card">
+                        <img src="/api/placeholder/300/200" class="card-img-top" alt="Producto 6">
+                        <div class="card-body">
+                            <h5 class="card-title">Huipil Bordado</h5>
+                            <p class="text-muted">Textiles</p>
+                            <p class="card-text">Prenda tradicional con bordados a mano de Chiapas.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 mb-0">$1,800</span>
+                                <button class="btn btn-sm btn-outline-primary">Ver detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 7 -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="card product-card">
+                        <img src="/api/placeholder/300/200" class="card-img-top" alt="Producto 7">
+                        <div class="card-body">
+                            <h5 class="card-title">Árbol de la Vida</h5>
+                            <p class="text-muted">Cerámica</p>
+                            <p class="card-text">Pieza decorativa elaborada y pintada a mano en Metepec.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 mb-0">$1,100</span>
+                                <button class="btn btn-sm btn-outline-primary">Ver detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 8 -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="card product-card">
+                        <img src="/api/placeholder/300/200" class="card-img-top" alt="Producto 8">
+                        <div class="card-body">
+                            <h5 class="card-title">Aretes de Ámbar</h5>
+                            <p class="text-muted">Joyería</p>
+                            <p class="card-text">Aretes de plata con ámbar natural de Chiapas montado a mano.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 mb-0">$780</span>
+                                <button class="btn btn-sm btn-outline-primary">Ver detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>ArtesaMex</h5>
+                    <p>Conectando el talento artesanal mexicano con el mundo desde 2015.</p>
+                    <div class="mt-3">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home-page" class="footer-link">Inicio</a></li>
+                        <li><a href="#about-page" class="footer-link">Acerca de Nosotros</a></li>
+                        <li><a href="#products-page" class="footer-link">Productos</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contáctanos</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Av. Artesanos 123, Colonia Centro, Ciudad de México</li>
+                        <li><i class="fas fa-phone me-2"></i> (55) 1234-5678</li>
+                        <li><i class="fas fa-envelope me-2"></i> contacto@artesamex.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="mt-4 mb-4 bg-light">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="mb-0">&copy; 2025 ArtesaMex. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Simple page navigation script
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all navbar links
+            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+            
+            // Add click event to each link
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    // Update active class
+                    navLinks.forEach(l => l.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Get target page id
+                    const targetId = this.getAttribute('href');
+                    
+                    // Hide all pages
+                    document.querySelectorAll('#home-page, #about-page, #products-page').forEach(page => {
+                        page.style.display = 'none';
+                    });
+                    
+                    // Show target page
+                    document.querySelector(targetId).style.display = 'block';
+                    
+                    // Scroll to top
+                    window.scrollTo(0, 0);
+                });
+            });
+            
+            // Initial setup - show home page
+            document.querySelector('#home-page').style.display = 'block';
+            document.querySelector('#about-page').style.display = 'none';
+            document.querySelector('#products-page').style.display = 'none';
+        });
+    </script>
+</body>
+</html>
