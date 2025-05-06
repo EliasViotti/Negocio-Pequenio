@@ -1,0 +1,194 @@
+:root {
+    --primary-color: #e76f51;
+    --secondary-color: #2a9d8f;
+    --accent-color: #e9c46a;
+    --dark-color: #264653;
+    --light-color: #f4f1de;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--dark-color);
+}
+
+/* =================ESTILO CSS, POR : AVALOS VALERIA================= */
+
+.card-img-top {
+    max-width: 90%;
+    height: auto;
+  }
+  .flex-image {
+    display: flex; /* <-- Esto es clave */
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.flex-card {
+    flex: 1;
+    transition: 0.7s ease;
+    overflow: hidden;
+}
+
+.flex-card:hover {
+    flex: 3;
+}
+
+.flex-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* =================FIN DE PARTECITA DEL CSS================= */
+
+
+.navbar {
+    background-color: var(--dark-color);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: var(--light-color) !important;
+}
+
+.nav-link {
+    color: var(--light-color) !important;
+    font-weight: 500;
+}
+
+.nav-link.active {
+    color: var(--accent-color) !important;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(38, 70, 83, 0.7), rgba(38, 70, 83, 0.7)), url('/api/placeholder/1920/1080');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 120px 0;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #d56344;
+    border-color: #d56344;
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.feature-box {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+.section-title {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+.section-title.text-center:after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.team-member {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.team-member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--light-color);
+}
+
+.product-card {
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.footer {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    padding: 60px 0 30px;
+}
+
+.footer h5 {
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+.footer-link {
+    color: var(--light-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: var(--accent-color);
+}
+
+.social-icon {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: var(--light-color);
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: var(--accent-color);
+}
+
+.col-lg-6 {
+    width: 500px;
+}
