@@ -87,10 +87,22 @@ Este documento presenta un análisis técnico del código HTML y CSS del proyect
 
 #===============================================================================================
 
-Los cambios que se hicieron fueron v1 .. 5 de mayo:
+**Los cambios que se hicieron fueron v1 .. 5 de mayo:**
 
 1. Agregar imagenes a los 8 productos
 2. En productos destacados, se colocaron imagenes, css, entre otros
 3. Se modificaron solo algunos titulos y descripciones de los 8 produtos
 4. Se arreglo la barra de navegacion para que sea un poco mas semantico , se puso el nav dentro del header.
 5. Se modifico el "acerca de nosotros" , se le agrego imagenes de la historia y mision
+
+#===============================================================================================
+
+**Cambios en la version 2.1**
+🖼 Contenido y Diseño
+1. 🔍 Búsqueda de recursos: Se buscaron imágenes y títulos para nuevos productos (recursos pendientes).
+2. 🎨 Banner renovado: Reemplazamos el banner por una imagen más atractiva y moderna.
+3. 🌈 Nueva paleta de colores: Actualizamos el esquema de colores para mejorar la experiencia visual.
+4. 🛒 Funcionalidades Mejoradas
+5. 📂 Barra de categorías reparada: Ahora los productos están correctamente organizados.
+6. 🔗 Enlaces de redes sociales: Corregidos para que funcionen correctamente.
+7. 📞 Contacto directo: Habilitados los enlaces de correo y teléfono para una interacción más rápida.
