@@ -1,0 +1,324 @@
+[
+  {
+    "id": 1,
+    "nombre": "Alebrije Pez Multicolor",
+    "categoria": "madera",
+    "precio": 850,
+    "descripcion": "Figura de pez, tallada y pintada a mano con diseños únicos y colores vibrantes.",
+    "imagen": ["assets/alebrijes/alebrijepez.jpeg"],
+    "detalles": {
+      "medidas": "20cm x 10cm x 8cm",
+      "material": "Madera de copal",
+      "tecnica": "Tallado y pintado a mano",
+      "origen": "San Martín Tilcajete, Oaxaca"
+    }
+  },
+  {
+    "id": 2,
+    "nombre": "Rebozo Tradicional",
+    "categoria": "textiles",
+    "precio": 1200,
+    "descripcion": "Tejido a mano en telar con técnicas ancestrales y tintes naturales.",
+    "imagen": ["assets/textiles/rebozo.png"],
+    "detalles": {
+      "medidas": "180cm x 60cm",
+      "material": "Algodón y seda",
+      "tecnica": "Tejido en telar de cintura",
+      "origen": "Santa María del Río, San Luis Potosí"
+    }
+  },
+  {
+    "id": 3,
+    "nombre": "Talavera Decorativa",
+    "categoria": "ceramica",
+    "precio": 650,
+    "descripcion": "Pieza de cerámica pintada a mano con diseños tradicionales de Puebla.",
+    "imagen": ["assets/ceramica/talavera1.png"],
+    "detalles": {
+      "medidas": "15cm x 15cm x 10cm",
+      "material": "Barro y esmaltes minerales",
+      "tecnica": "Moldeado y pintado a mano",
+      "origen": "Puebla, Puebla"
+    }
+  },
+  {
+    "id": 4,
+    "nombre": "Collar de Plata",
+    "categoria": "joyeria",
+    "precio": 1500,
+    "descripcion": "Joyería fina de plata trabajada a mano por artesanos de Taxco.",
+    "imagen": ["assets/joyerias/collardeplata.jpg"],
+    "detalles": {
+      "medidas": "40cm de largo",
+      "material": "Plata esterlina 925",
+      "tecnica": "Repujado y cincelado",
+      "origen": "Taxco, Guerrero"
+    }
+  },
+  {
+    "id": 5,
+    "nombre": "Máscara Ceremonial",
+    "categoria": "madera",
+    "precio": 950,
+    "descripcion": "Máscara tallada en madera inspirada en tradiciones prehispánicas.",
+    "imagen": ["assets/madera/images.jpeg"],
+    "detalles": {
+      "medidas": "25cm x 18cm x 10cm",
+      "material": "Madera de cedro",
+      "tecnica": "Tallado y policromado",
+      "origen": "Michoacán"
+    }
+  },
+  {
+    "id": 6,
+    "nombre": "Huipil Bordado",
+    "categoria": "textiles",
+    "precio": 1800,
+    "descripcion": "Prenda tradicional con bordados a mano de Chiapas.",
+    "imagen": ["assets/textiles/huipil1.jpg"],
+    "detalles": {
+      "medidas": "Talla única (ajustable)",
+      "material": "Algodón y lana",
+      "tecnica": "Bordado a mano con punto de cruz",
+      "origen": "San Juan Chamula, Chiapas"
+    }
+  },
+  {
+    "id": 7,
+    "nombre": "Árbol de la Vida",
+    "categoria": "ceramica",
+    "precio": 1100,
+    "descripcion": "Bonito arbol de vida de cerámica, decorada, elaborada y pintada a mano en Metepec.",
+    "imagen": ["assets/ceramica/arboldevida.jpg"],
+    "detalles": {
+      "medidas": "30cm de altura",
+      "material": "Barro rojo y esmaltes",
+      "tecnica": "Modelado y pintura a mano",
+      "origen": "Metepec, Estado de México"
+    }
+  },
+  {
+    "id": 8,
+    "nombre": "Aretes de Ámbar",
+    "categoria": "joyeria",
+    "precio": 780,
+    "descripcion": "Aretes de plata con ámbar natural de Chiapas montado a mano.",
+    "imagen": ["assets/joyerias/aretesambar.jpg"],
+    "detalles": {
+      "medidas": "3cm de diámetro",
+      "material": "Ámbar natural y plata",
+      "tecnica": "Engaste tradicional",
+      "origen": "Simojovel, Chiapas"
+    }
+  },
+  {
+    "id": 9,
+    "nombre": "Florero Cerámico",
+    "categoria": "ceramica",
+    "precio": 1150,
+    "descripcion": "Florero pintado a mano con escenas coloridas que representan la cultura popular mexicana.",
+    "imagen": ["assets/ceramica/florero-ceramico.jpg"],
+    "detalles": {
+      "medidas": "25cm de altura x 15cm diámetro",
+      "material": "Barro de alta temperatura",
+      "tecnica": "Torneado y pintura a mano",
+      "origen": "Dolores Hidalgo, Guanajuato"
+    }
+  },
+  {
+    "id": 10,
+    "nombre": "Jarrón Decorativo",
+    "categoria": "ceramica",
+    "precio": 2250,
+    "descripcion": "Pieza de cerámica artesanal con patrones geométricos tradicionales de estilo indígena.",
+    "imagen": ["assets/ceramica/jarron-decorativo.jpeg"],
+    "detalles": {
+      "medidas": "35cm de altura x 20cm diámetro",
+      "material": "Barro bruñido",
+      "tecnica": "Técnica de reducción de oxígeno",
+      "origen": "Mata Ortiz, Chihuahua"
+    }
+  },
+  {
+    "id": 11,
+    "nombre": "Sapo Decorativo",
+    "categoria": "ceramica",
+    "precio": 2300,
+    "descripcion": "Figura de sapo elaborada en cerámica con acabados artesanales. Decorada con motivos florales en tonos ocres, azules y negros que reflejan el arte popular mexicano. Ideal como pieza ornamental o de colección.",
+    "imagen": ["assets/ceramica/sapoceramica.jpg"],
+    "detalles": {
+      "medidas": "18cm x 12cm x 10cm",
+      "material": "Barro vidriado",
+      "tecnica": "Modelado y esgrafiado",
+      "origen": "Tonalá, Jalisco"
+    }
+  },
+  {
+    "id": 12,
+    "nombre": "Armadillo Alebrije",
+    "categoria": "madera",
+    "precio": 1350,
+    "descripcion": "Figura tallada y pintada a mano con vivos colores y patrones fantásticos típicos del arte oaxaqueño.",
+    "imagen": ["assets/alebrijes/armadillo-alebrije.jpg"],
+    "detalles": {
+      "medidas": "15cm x 8cm x 6cm",
+      "material": "Madera de copal",
+      "tecnica": "Tallado y pintura a mano",
+      "origen": "San Martín Tilcajete, Oaxaca"
+    }
+  },
+  {
+    "id": 13,
+    "nombre": "Búho Artesanal",
+    "categoria": "madera",
+    "precio": 2050,
+    "descripcion": "Escultura de búho con alas extendidas, decorada con detalles minuciosos en colores brillantes.",
+    "imagen": ["assets/alebrijes/buo-artesanal-alebrije.jpg"],
+    "detalles": {
+      "medidas": "25cm x 15cm x 10cm",
+      "material": "Madera de zompantle",
+      "tecnica": "Tallado y laqueado",
+      "origen": "Arrazola, Oaxaca"
+    }
+  },
+  {
+    "id": 14,
+    "nombre": "Gato Alebrije",
+    "categoria": "madera",
+    "precio": 2550,
+    "descripcion": "Colorida figura felina con diseños psicodélicos que combinan tradición y creatividad mexicana.",
+    "imagen": ["assets/alebrijes/gato-alejibres.jpg"],
+    "detalles": {
+      "medidas": "20cm x 12cm x 8cm",
+      "material": "Madera de copal",
+      "tecnica": "Tallado y pintura acrílica",
+      "origen": "La Unión Tejalapan, Oaxaca"
+    }
+  },
+  {
+    "id": 15,
+    "nombre": "Brazalete Mexicano",
+    "categoria": "joyeria",
+    "precio": 3050,
+    "descripcion": "Brazalete elaborado con detalles ornamentales y acabado vintage que refleja la riqueza cultural mexicana.",
+    "imagen": ["assets/joyerias/brazalete-mexicano.jpg"],
+    "detalles": {
+      "medidas": "Ajustable hasta 18cm",
+      "material": "Plata y cobre",
+      "tecnica": "Filigrana y repujado",
+      "origen": "Taxco, Guerrero"
+    }
+  },
+  {
+    "id": 16,
+    "nombre": "Broche Antiguo",
+    "categoria": "joyeria",
+    "precio": 3350,
+    "descripcion": "Elegantes broches florales con incrustaciones artesanales, inspirados en el estilo clásico de la joyería tradicional.",
+    "imagen": ["assets/joyerias/broche-antiguo.jpg"],
+    "detalles": {
+      "medidas": "5cm x 3cm",
+      "material": "Plata y piedras semipreciosas",
+      "tecnica": "Cincelado y engaste",
+      "origen": "Guadalajara, Jalisco"
+    }
+  },
+  {
+    "id": 17,
+    "nombre": "Reloj Mexicano",
+    "categoria": "joyeria",
+    "precio": 3900,
+    "descripcion": "Reloj de diseño único que integra elementos artesanales mexicanos en una pieza moderna y sofisticada.",
+    "imagen": ["assets/joyerias/reloj-mexicanos.png"],
+    "detalles": {
+      "medidas": "3cm de diámetro",
+      "material": "Plata y obsidiana",
+      "tecnica": "Engaste y esmalte",
+      "origen": "Taxco, Guerrero"
+    }
+  },
+  {
+    "id": 18,
+    "nombre": "Figura Contemplativa en Madera",
+    "categoria": "madera",
+    "precio": 3000,
+    "descripcion": "Escultura artesanal tallada en madera que representa una figura humana en postura reflexiva. Su diseño abstracto y suave acabado natural evocan tranquilidad y conexión interior. Ideal para decoración de interiores con un estilo artístico y orgánico.",
+    "imagen": ["assets/madera/esculturamadera.JPG"],
+    "detalles": {
+      "medidas": "30cm x 15cm x 10cm",
+      "material": "Madera de mezquite",
+      "tecnica": "Tallado directo",
+      "origen": "Oaxaca"
+    }
+  },
+  {
+    "id": 19,
+    "nombre": "Gato de Madera",
+    "categoria": "madera",
+    "precio": 3600,
+    "descripcion": "Escultura de gato elaborada con detalles finos y acabados tradicionales, representando la fauna mexicana.",
+    "imagen": ["assets/madera/gato-madera.jpg"],
+    "detalles": {
+      "medidas": "25cm x 12cm x 8cm",
+      "material": "Madera de nogal",
+      "tecnica": "Tallado y pulido",
+      "origen": "Michoacán"
+    }
+  },
+  {
+    "id": 20,
+    "nombre": "Máscara de Jaguar Tradicional",
+    "categoria": "madera",
+    "precio": 2900,
+    "descripcion": "Máscara de madera pintada a mano, inspirada en el jaguar, usada en danzas y tradiciones mexicanas.",
+    "imagen": ["assets/madera/mascaramadera.jpg"],
+    "detalles": {
+      "medidas": "22cm x 18cm x 8cm",
+      "material": "Madera de ayacahuite",
+      "tecnica": "Tallado y policromado",
+      "origen": "Guerrero"
+    }
+  },
+  {
+    "id": 21,
+    "nombre": "Sarape mexicano",
+    "categoria": "textiles",
+    "precio": 3400,
+    "descripcion": "Textil tradicional con franjas de colores, ideal como cobija o decoración.",
+    "imagen": ["assets/textiles/mantatextil.JPG"],
+    "detalles": {
+      "medidas": "200cm x 120cm",
+      "material": "Lana virgen",
+      "tecnica": "Tejido en telar de pedal",
+      "origen": "Saltillo, Coahuila"
+    }
+  },
+  {
+    "id": 22,
+    "nombre": "Almohadones Bordados",
+    "categoria": "textiles",
+    "precio": 3100,
+    "descripcion": "Cojines decorativos con bordados florales hechos a mano, típicos del arte textil indígena.",
+    "imagen": ["assets/textiles/almohadones-bordados.jpg"],
+    "detalles": {
+      "medidas": "40cm x 40cm",
+      "material": "Algodón y lana",
+      "tecnica": "Bordado tenango",
+      "origen": "Tenango de Doria, Hidalgo"
+    }
+  },
+  {
+    "id": 23,
+    "nombre": "Hamaca Mexicana",
+    "categoria": "textiles",
+    "precio": 3000,
+    "descripcion": "Hamaca tejida con hilos multicolores, ideal para el descanso y elaborada con técnicas tradicionales del sureste de México.",
+    "imagen": ["assets/textiles/hamaca-mexicana.jpg"],
+    "detalles": {
+      "medidas": "250cm x 150cm",
+      "material": "Hilo de algodón",
+      "tecnica": "Tejido de urdimbre",
+      "origen": "Yucatán"
+    }
+  }
+]
