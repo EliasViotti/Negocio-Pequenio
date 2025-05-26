@@ -11,7 +11,8 @@
       "material": "Madera de copal",
       "tecnica": "Tallado y pintado a mano",
       "origen": "San Martín Tilcajete, Oaxaca"
-    }
+    },
+    "stock": 15
   },
   {
     "id": 2,
@@ -25,7 +26,8 @@
       "material": "Algodón y seda",
       "tecnica": "Tejido en telar de cintura",
       "origen": "Santa María del Río, San Luis Potosí"
-    }
+    },
+    "stock": 15
   },
   {
     "id": 3,
@@ -39,7 +41,8 @@
       "material": "Barro y esmaltes minerales",
       "tecnica": "Moldeado y pintado a mano",
       "origen": "Puebla, Puebla"
-    }
+    },
+    "stock": 15
   },
   {
     "id": 4,
@@ -53,7 +56,8 @@
       "material": "Plata esterlina 925",
       "tecnica": "Repujado y cincelado",
       "origen": "Taxco, Guerrero"
-    }
+    },
+    "stock": 15
   },
   {
     "id": 5,
@@ -67,7 +71,8 @@
       "material": "Madera de cedro",
       "tecnica": "Tallado y policromado",
       "origen": "Michoacán"
-    }
+    },
+    "stock": 15
   },
   {
     "id": 6,
@@ -81,7 +86,8 @@
       "material": "Algodón y lana",
       "tecnica": "Bordado a mano con punto de cruz",
       "origen": "San Juan Chamula, Chiapas"
-    }
+    },
+    "stock": 15
   },
   {
     "id": 7,
@@ -95,7 +101,8 @@
       "material": "Barro rojo y esmaltes",
       "tecnica": "Modelado y pintura a mano",
       "origen": "Metepec, Estado de México"
-    }
+    },
+    "stock": 15
   },
   {
     "id": 8,
@@ -109,7 +116,8 @@
       "material": "Ámbar natural y plata",
       "tecnica": "Engaste tradicional",
       "origen": "Simojovel, Chiapas"
-    }
+    },
+    "stock": 15
   },
   {
     "id": 9,
@@ -123,7 +131,8 @@
       "material": "Barro de alta temperatura",
       "tecnica": "Torneado y pintura a mano",
       "origen": "Dolores Hidalgo, Guanajuato"
-    }
+    },
+    "stock": 15
   },
   {
     "id": 10,
@@ -137,7 +146,8 @@
       "material": "Barro bruñido",
       "tecnica": "Técnica de reducción de oxígeno",
       "origen": "Mata Ortiz, Chihuahua"
-    }
+    },
+    "stock": 15
   },
   {
     "id": 11,
@@ -151,7 +161,8 @@
       "material": "Barro vidriado",
       "tecnica": "Modelado y esgrafiado",
       "origen": "Tonalá, Jalisco"
-    }
+    },
+    "stock": 15
   },
   {
     "id": 12,
@@ -165,7 +176,8 @@
       "material": "Madera de copal",
       "tecnica": "Tallado y pintura a mano",
       "origen": "San Martín Tilcajete, Oaxaca"
-    }
+    },
+    "stock": 15
   },
   {
     "id": 13,
@@ -179,7 +191,8 @@
       "material": "Madera de zompantle",
       "tecnica": "Tallado y laqueado",
       "origen": "Arrazola, Oaxaca"
-    }
+    },
+    "stock": 15
   },
   {
     "id": 14,
@@ -193,7 +206,8 @@
       "material": "Madera de copal",
       "tecnica": "Tallado y pintura acrílica",
       "origen": "La Unión Tejalapan, Oaxaca"
-    }
+    },
+    "stock": 15
   },
   {
     "id": 15,
@@ -207,7 +221,8 @@
       "material": "Plata y cobre",
       "tecnica": "Filigrana y repujado",
       "origen": "Taxco, Guerrero"
-    }
+    },
+    "stock": 15
   },
   {
     "id": 16,
@@ -221,7 +236,8 @@
       "material": "Plata y piedras semipreciosas",
       "tecnica": "Cincelado y engaste",
       "origen": "Guadalajara, Jalisco"
-    }
+    },
+    "stock": 15
   },
   {
     "id": 17,
@@ -235,7 +251,8 @@
       "material": "Plata y obsidiana",
       "tecnica": "Engaste y esmalte",
       "origen": "Taxco, Guerrero"
-    }
+    },
+    "stock": 15
   },
   {
     "id": 18,
@@ -249,7 +266,8 @@
       "material": "Madera de mezquite",
       "tecnica": "Tallado directo",
       "origen": "Oaxaca"
-    }
+    },
+    "stock": 15
   },
   {
     "id": 19,
@@ -263,7 +281,8 @@
       "material": "Madera de nogal",
       "tecnica": "Tallado y pulido",
       "origen": "Michoacán"
-    }
+    },
+    "stock": 15
   },
   {
     "id": 20,
@@ -277,7 +296,8 @@
       "material": "Madera de ayacahuite",
       "tecnica": "Tallado y policromado",
       "origen": "Guerrero"
-    }
+    },
+    "stock": 15
   },
   {
     "id": 21,
@@ -291,7 +311,8 @@
       "material": "Lana virgen",
       "tecnica": "Tejido en telar de pedal",
       "origen": "Saltillo, Coahuila"
-    }
+    },
+    "stock": 15
   },
   {
     "id": 22,
@@ -305,7 +326,8 @@
       "material": "Algodón y lana",
       "tecnica": "Bordado tenango",
       "origen": "Tenango de Doria, Hidalgo"
-    }
+    },
+    "stock": 15
   },
   {
     "id": 23,
